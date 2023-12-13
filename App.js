@@ -1,8 +1,17 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client"
 
 // const heading = React.createElement('h1', {}, 'Hello World from React!');
-const parent = React.createElement('div', {id:'parent'}, [React.createElement('div', {id:'child'}, [React.createElement('h2', {id: 'grandChild1'}, 'I am grandchild1'), React.createElement('h2', {id: 'grandChild2'}, 'I am grandchild2')]), React.createElement('h2', {id:'child2'}, 'I am Child2!')]);
+const jsxHeading = <h1>Recap React 🚀</h1> 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(parent);
+const Defination = () => (<h2>Component Composition where there is component in another component.</h2>);
+
+const HeadingComponent = () => (
+     <div>
+        <h1>Recap React 🚀</h1>
+        <Defination/>
+    </div>
+)
+root.render(<HeadingComponent/>);
