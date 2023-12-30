@@ -1,9 +1,13 @@
+import resList from '../../utils/restaurantData';
+
+
 const Shimmer = () => {
+    const rData = resList;
     return (
         <div className="shimmer-container">
-            <div className="shimmer-card">Card</div>
-            <div className="shimmer-card">Card</div>
-            <div className="shimmer-card">Card</div>
+           {rData.map(()=> 
+              <div className="shimmer-card"></div>
+           ) }
         </div>
     )
 }
