@@ -30,7 +30,6 @@ const Body = () => {
             const filteredResList = resData.filter((fRes)=>
                 fRes.info.name.includes(searchRes)
             );
-            console.log('filteredResList', filteredResList)
             setListOfRestaurant(filteredResList);
 
         }}>Search</button>
