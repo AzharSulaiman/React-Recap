@@ -19,6 +19,10 @@
     margin-left: 7%;
 }
 
+.nav-items {
+    padding: 10px;
+}
+
 .nav-items>ul {
     display: flex;
     list-style-type: none;

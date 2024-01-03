@@ -5,8 +5,8 @@ const Shimmer = () => {
     const rData = resList;
     return (
         <div className="shimmer-container">
-           {rData.map(()=> 
-              <div className="shimmer-card"></div>
+           {rData.map((res)=> 
+              <div className="shimmer-card" key={res.info.id}></div>
            ) }
         </div>
     )
